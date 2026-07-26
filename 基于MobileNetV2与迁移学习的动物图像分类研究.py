@@ -28,7 +28,7 @@ transform_test = transforms.Compose([
 
 # 数据集加载
 # 数据集本地路径
-data_root = r"D:\迅雷云盘\ANIMALS\ANIMALS\raw-img"
+data_root = r"D:\ANIMALS\ANIMALS\raw-img"
 
 # 自动读取10个类别文件夹
 dataset = ImageFolder(root=data_root, transform=transform_train)
