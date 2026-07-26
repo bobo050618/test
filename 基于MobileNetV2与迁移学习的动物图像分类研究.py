@@ -28,6 +28,7 @@ transform_test = transforms.Compose([
 
 # 数据集加载
 # 数据集本地路径
+# 数据集自己到网上下载
 data_root = r"D:\ANIMALS\ANIMALS\raw-img"
 
 # 自动读取10个类别文件夹
