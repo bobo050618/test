@@ -144,8 +144,8 @@ plt.tight_layout()
 plt.show()
 
 
-# ===================== 7. 补充：可视化相关代=====================
-# 7.1 特征图可视化
+
+# 特征图可视化
 def visualize_feature_map():
     import matplotlib.pyplot as plt
     # 选取一张测试集图像
@@ -169,7 +169,7 @@ def visualize_feature_map():
     # 取消钩子
     handle.remove()
 
-    # 绘制特征图（展示前8个通道）
+    # 绘制特征图
     plt.figure(figsize=(12, 4))
     for i in range(8):
         plt.subplot(2, 4, i + 1)
@@ -179,7 +179,7 @@ def visualize_feature_map():
     plt.show()
 
 
-# 7.2 t-SNE特征降维可视化
+# t-SNE特征降维可视化
 def visualize_tsne():
     from sklearn.manifold import TSNE
     import numpy as np
@@ -215,7 +215,7 @@ def visualize_tsne():
     plt.show()
 
 
-# 7.3 注意力图可视化（Grad-CAM）
+# 注意力图可视化
 def visualize_attention_map():
     from pytorch_grad_cam import GradCAM
     from pytorch_grad_cam.utils.image import show_cam_on_image
